@@ -4,7 +4,12 @@ export default async (req, res) => {
   // const {
   //   query: { slug }
   // } = req;
-  res.status(200).json({ data: process.env.STORYBLOK_API_TOKEN });
+  res.status(200).json({
+    data: {
+      sb: `${process.env.STORYBLOK_API_TOKEN}`,
+      key: `${process.env.MY_KEY}`
+    }
+  });
 
   // Storyblok.get(`cdn/stories/about`, {})
   //   .then(response => {
