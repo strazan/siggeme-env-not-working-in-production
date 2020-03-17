@@ -11,11 +11,11 @@ const Navbar = props => {
             <a>home</a>
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="/blog">
             <a>blog</a>
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link href="/about">
             <a href="/about">about</a>

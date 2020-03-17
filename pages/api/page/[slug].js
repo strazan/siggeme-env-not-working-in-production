@@ -1,33 +1,23 @@
-// import { Storyblok } from "../../../utils/StoryblokClient";
-
-const StoryblokClient = require("storyblok-js-client");
-
-export const Storyblok = new StoryblokClient({
-  accessToken: process.env.STORYBLOK_API_TOKEN,
-  cache: {
-    clear: "auto",
-    type: "memory"
-  }
-});
+import { Storyblok } from "../../../utils/StoryblokClient";
 
 export default async (req, res) => {
-  const {
-    query: { slug }
-  } = req;
+  // const {
+  //   query: { slug }
+  // } = req;
+  res.status(200).json({ data: process.env.STORYBLOK_API_TOKEN });
 
-  Storyblok.get(`cdn/stories/${slug}`, {})
-    .then(response => {
-      console.log(response);
-      const {
-        data: {
-          story: { content }
-        }
-      } = response;
-      const data = { content };
-      res.status(200).json(data);
-    })
-    .catch(error => {
-      console.log(error);
-      res.status(500).json(`${error.name}: WHY ${error.message}`);
-    });
+  // Storyblok.get(`cdn/stories/about`, {})
+  //   .then(response => {
+  //     const {
+  //       data: {
+  //         story: { content }
+  //       }
+  //     } = response;
+  //     const data = { content };
+  //     res.status(200).json(data);
+  //   })
+  //   .catch(error => {
+  //     console.log(error);
+  //     res.status(400).json(`${error.name}: NOT A MESSAGE`);
+  //   });
 };
