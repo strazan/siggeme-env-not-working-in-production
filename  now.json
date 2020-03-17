@@ -1,6 +1,8 @@
 {
-  "env": {
-    "STORYBLOK_API_TOKEN": "@storyblok_api_token",
-    "MY_KEY": "storyyyyyblok_api_token"
+  "build": {
+    "env": {
+      "STORYBLOK_API_TOKEN": "@storyblok_api_token",
+      "MY_TEXT_TOKEN": "testing123"
+    }
   }
 }

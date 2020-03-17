@@ -1,16 +1,16 @@
-import { Storyblok } from "../../../utils/StoryblokClient";
+// import { Storyblok } from "../../../utils/StoryblokClient";
 
 export default async (req, res) => {
-  // const {
-  //   query: { slug }
-  // } = req;
   res.status(200).json({
     data: {
       sb: `${process.env.STORYBLOK_API_TOKEN}`,
-      key: `${process.env.MY_KEY}`
+      test: `${process.env.MY_TEST_TOKEN}`
     }
   });
 
+  // const {
+  //   query: { slug }
+  // } = req;
   // Storyblok.get(`cdn/stories/about`, {})
   //   .then(response => {
   //     const {
