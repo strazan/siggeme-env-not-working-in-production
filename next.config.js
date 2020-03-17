@@ -6,7 +6,7 @@ compiled correctly into CSS when we run our app in the browser */
 module.exports = withSass({
   env: {
     STORYBLOK_API_TOKEN: process.env.STORYBLOK_API_TOKEN,
-    MY_KEY: "process.env.MY_KEY"
+    MY_KEY: process.env.MY_KEY
   },
   cssModules: true,
   cssLoaderOptions: {
