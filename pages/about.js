@@ -12,6 +12,7 @@ const AboutPage = ({ data }) => {
 
 AboutPage.getInitialProps = async () => {
   const data = await fetchUrl(`http://localhost:3000/api/page/about`);
+  console.log(data);
   return { data };
 };
 

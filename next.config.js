@@ -10,6 +10,6 @@ module.exports = withSass({
     localIdentName: "[local]___[hash:base64:5]"
   },
   env: {
-    STORYBLOK_KEY: process.env.STORYBLOK_TOKEN
+    STORYBLOK_API_TOKEN: process.env.STORYBLOK_API_TOKEN
   }
 });

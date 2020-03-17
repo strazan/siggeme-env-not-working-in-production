@@ -1,4 +1,4 @@
-import { Storyblok } from "../../../utils/storyblokClient";
+import { Storyblok } from "../../../utils/StoryblokClient";
 
 export default async (req, res) => {
   const {
