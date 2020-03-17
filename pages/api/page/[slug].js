@@ -1,4 +1,14 @@
-import { Storyblok } from "../../../utils/StoryblokClient";
+// import { Storyblok } from "../../../utils/StoryblokClient";
+
+const StoryblokClient = require("storyblok-js-client");
+
+export const Storyblok = new StoryblokClient({
+  accessToken: process.env.STORYBLOK_API_TOKEN,
+  cache: {
+    clear: "auto",
+    type: "memory"
+  }
+});
 
 export default async (req, res) => {
   const {
@@ -7,6 +17,7 @@ export default async (req, res) => {
 
   Storyblok.get(`cdn/stories/${slug}`, {})
     .then(response => {
+      console.log(response);
       const {
         data: {
           story: { content }
@@ -17,6 +28,6 @@ export default async (req, res) => {
     })
     .catch(error => {
       console.log(error);
-      res.status(500).json(`${error.name}: ${error.message}`);
+      res.status(500).json(`${error.name}: WHY ${error.message}`);
     });
 };

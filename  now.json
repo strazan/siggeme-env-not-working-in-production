@@ -1,7 +1,10 @@
 {
   "build": {
     "env": {
-      "STORYBLOK_API_TOKEN": "@storyblok_api_token"
+      "STORYBLOK_API_TOKEN": "@storyblok-api-token"
     }
+  },
+  "env": {
+    "STORYBLOK_API_TOKEN": "@storyblok-api-token"
   }
 }

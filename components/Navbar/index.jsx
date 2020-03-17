@@ -22,7 +22,7 @@ const Navbar = props => {
           </Link>
         </li>
         <li>
-          <div>
+          {/* <div>
             <Link href="/projects">
               <a>stuff i made</a>
             </Link>
@@ -34,7 +34,7 @@ const Navbar = props => {
             <Link href="/projects">
               <a>stuff i made</a>
             </Link>
-          </div>
+          </div> */}
         </li>
       </ul>
     </div>
