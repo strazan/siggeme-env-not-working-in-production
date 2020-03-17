@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 
 import { fetchUrl, url } from "../utils/util";
-// const { data, error } = useSWR('/api/randomQuote', fetcher);
+
 const AboutPage = ({ data }) => {
   console.log(data);
   return (
