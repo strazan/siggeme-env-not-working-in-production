@@ -1,0 +1,19 @@
+.navbar {
+  ul {
+    display: flex;
+    max-width: 1400px;
+    margin: auto;
+    li {
+      padding: 0.2rem 2rem;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:nth-child(2) {
+        margin-left: auto;
+      }
+      a {
+        color: #11f;
+      }
+    }
+  }
+}

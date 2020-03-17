@@ -1,13 +1,11 @@
-import DefaultLayout from '../components/layouts/DefaultLayout';
+import Layout from "../components/Layout";
 
-/* This route gets hit by default, e.g. your-site.com */
-const DefaultPage = () => {
-	return (
-		<DefaultLayout>
-			<h1>Default Page</h1>
-			<a href="/welcome">->Visit a Slug Page</a>
-		</DefaultLayout>
-	);
+const IndexPage = () => {
+  return (
+    <Layout title="home">
+      <h1>>HOME Page</h1>
+    </Layout>
+  );
 };
 
-export default DefaultPage;
+export default IndexPage;

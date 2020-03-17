@@ -1,4 +1,11 @@
+.next
+
+
 node_modules
+package-lock.json
+yarn.lock
+!/yarn.lock
+test/node_modules
 
 .DS_*
 *.log
@@ -13,3 +20,4 @@ bower_components
 psd
 thumb
 sketch
+.now
